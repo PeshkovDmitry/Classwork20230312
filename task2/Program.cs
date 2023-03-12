@@ -1,16 +1,9 @@
-﻿Console.Write("Введите номер четверти: ");
-double n = Convert.ToDouble(Console.ReadLine());
-if (n == 1) {
-    Console.WriteLine("X > 0, Y > 0");
-}
-else if (n == 2) {
-    Console.WriteLine("X < 0, Y > 0");
-}
-else if (n == 3) {
-    Console.WriteLine("X < 0, Y < 0");
-} 
-else if (n == 4) {
-    Console.WriteLine("X > 0, Y < 0");
-} else {
-    Console.WriteLine("Такой четверти нет");
-}c
+﻿Console.Write("Введите X1: ");
+int x1 = Convert.ToInt32(Console.ReadLine());
+Console.Write("Введите Y1: ");
+int y1 = Convert.ToInt32(Console.ReadLine());
+Console.Write("Введите X2: ");
+int x2 = Convert.ToInt32(Console.ReadLine());
+Console.Write("Введите Y2: ");
+int y2 = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine($"Расстояние - {Math.Sqrt(Math.Pow(x2-x1,2)+Math.Pow(y2-y1,2))}");
